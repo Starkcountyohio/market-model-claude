@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# --- Editor / OS noise ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+
+# --- Per-user Claude memory (lives in ~/.claude regardless of project location) ---
+.claude/
+
+# --- DATA & GENERATED WORKBOOKS — these live in the shared OneDrive folder, not git ---
+# County sales data and reference workbooks belong in the OneDrive-synced folder
+# pointed to by the MARKET_MODEL_DATA env var. See config.py.
+*.xlsx
+*.xls
+*.csv
+*.tsv
+*.html
+*.pdf
+
+# --- Scratch / exploration files (underscore-prefixed convention) ---
+_*.py
+_*.txt
+
+# --- Local config overrides (per-machine) ---
+config.local.py
