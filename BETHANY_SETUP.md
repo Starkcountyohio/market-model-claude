@@ -2,6 +2,13 @@
 
 One-time setup to start working on this project. ~30 minutes if everything goes smoothly. If anything fails, send Jason a screenshot of the exact error message — don't try to fix it blind.
 
+## 0. Before you start — confirm these two things with Jason
+
+- **You have a GitHub account.** If not, sign up at https://github.com — free, takes 2 minutes. Use your `@starkcountyohio.gov` email so it's tied to your work identity. Tell Jason your GitHub username once you have one.
+- **Jason has invited you to the repo.** You'll get an email from GitHub titled something like "@jmjeffries invited you to Starkcountyohio/market-model-claude". Click **Accept invitation**. After that, your GitHub account can see the repo.
+
+You use YOUR OWN GitHub credentials throughout setup — never Jason's. VS Code will pop up a browser and ask you to sign in when you clone the repo (step 5); Windows caches the credentials after that, so you only sign in once per machine.
+
 ## 1. Accept the OneDrive share
 
 Jason has shared the **Market Model Claude** folder with you in OneDrive. Open the email and click **Open**, then **Add shortcut to my OneDrive**. Wait for OneDrive to finish syncing (the green checkmark on the folder icon means done — initial sync is ~50 MB so should be quick).
