@@ -2,6 +2,23 @@
 
 This file is the shared brain for any Claude Code session working on this project, on any collaborator's machine. Read it first.
 
+## Current status (updated 2026-05-12)
+
+- **Track 1 (time-adjustment QC):** ✅ closed. Conclusion is keep the linear-per-cluster time term as-is; the empirical fit is within 10% per cluster and per-cluster spline uplift is modest (≤ 0.04 R²). Deliverable workbook is `Time_Adjustment_QC_2026.xlsx` in the OneDrive folder.
+- **Track 2 (model output review):** about to start. Approach: cluster-by-cluster manual review with sale curation — for each cluster, walk the market sale extract, decide which sales to keep/remove, rerun the model, decide whether to adjust setup forms (variables, transforms, constraints).
+  - **Jason:** starts at cluster 600, works down (600 → 500 → 400 → 300)
+  - **Bethany:** starts at cluster 100, works up (100 → 200 → 300 → 400)
+- **Track 3 (ratio study) / Track 4 (BoR defense workbooks):** not started — deferred until Track 2 cluster work is mostly done.
+- **Open design question for Track 2's first session:** how to script the cluster-level sales-curation + re-fit workflow. Decide whether to extend `build_time_adjustment_qc.py` or start a new `cluster_review.py`. What does the per-cluster output workbook look like? How do we capture keep/remove sale decisions auditably?
+
+**To resume work:**
+```
+cd C:\Users\jmjeffri\dev\market-model-claude
+code .
+# launch Claude Code, then:
+> "Let's start Track 2 on cluster 600."
+```
+
 ## What this project is
 
 QC and review tooling for the **2026 cycle** of Stark County Auditor's market valuation model. The market model is the **value-defense** tool (used at Boards of Revision); the cost model is what taxes are billed on. So "good" here means defensible per-parcel, not just accurate in aggregate.
